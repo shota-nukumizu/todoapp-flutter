@@ -3,12 +3,6 @@ import 'package:intl/intl.dart';
 import 'dart:convert';
 import 'todo.dart';
 
-/// Todoストアのクラス
-///
-/// ※当クラスはシングルトンとなる
-///
-/// 以下の責務を持つ
-/// ・Todoを取得/追加/更新/削除/保存/読込する
 class TodoListStore {
   /// 保存時のキー
   final String _saveKey = "Todo";

@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'todo_list_store.dart';
 import 'todo.dart';
 
-/// Todo入力画面のクラス
-///
-/// 以下の責務を持つ
-/// ・Todo入力画面の状態を生成する
 class TodoInputPage extends StatefulWidget {
   /// Todoのモデル
   final Todo? todo;
@@ -19,11 +15,6 @@ class TodoInputPage extends StatefulWidget {
   State<TodoInputPage> createState() => _TodoInputPageState();
 }
 
-/// Todo入力ト画面の状態クラス
-///
-/// 以下の責務を持つ
-/// ・Todoを追加/更新する
-/// ・Todoリスト画面へ戻る
 class _TodoInputPageState extends State<TodoInputPage> {
   /// ストア
   final TodoListStore _store = TodoListStore();
